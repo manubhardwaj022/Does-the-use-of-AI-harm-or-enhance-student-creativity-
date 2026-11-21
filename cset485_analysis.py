@@ -65,7 +65,7 @@ def train_test_indices(n: int):
 
 
 def design_matrices(train: pd.DataFrame, test: pd.DataFrame):
-    """One-hot encode categorical data and scale numeric features using train only."""
+    """One-hot encode categoricals and standardise every design column except the intercept using training-only statistics."""
     levels = {
         c: sorted(train[c].dropna().astype(str).unique().tolist())
         for c in CATEGORICAL
