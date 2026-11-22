@@ -28,7 +28,7 @@ def main() -> pd.DataFrame:
         raise ValueError("Evidence matrix has no study rows.")
 
     allowed = {
-        "Positive on measured idea-generation dimensions",
+        "Mixed; positive task scores with qualitative concerns",
         "Positive on solution quality and originality",
         "Mixed; no overall evidence of decline",
         "Mixed; effects depended on discipline and dimension",
